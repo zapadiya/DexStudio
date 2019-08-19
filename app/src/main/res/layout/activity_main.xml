@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+    <ImageView
+        android:id="@+id/imgRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_refresh_black_24dp" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/movies_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imgRefresh"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>

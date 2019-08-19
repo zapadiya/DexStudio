@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/txvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#553E86"
+        android:textStyle="bold"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/txvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txvTitle"
+        android:layout_toLeftOf="@id/imgUserAvatar"
+        android:textColor="#000000"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imgUserAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txvTitle"
+        android:layout_toLeftOf="@id/imgNext"
+        android:layout_alignBottom="@+id/txvDescription"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imgNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txvTitle"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_navigate_next"/>
+    <View
+        android:id="@+id/item_divider_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@id/imgUserAvatar"
+        android:background="#cfcfcf"
+        android:visibility="visible" />
+</RelativeLayout>
